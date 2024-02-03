@@ -1,46 +1,135 @@
 doctype html
-head
-  // title, css link, meta(encoding)
-  meta(charset='UTF-8')
-  title Library Management System 
-  style.
-    body {
-    background-color: #fafafa;
-    margin: 0 15% 0 15%;
-    }
-    h1 {
-    text-align: center;
-    text-transform: uppercase;
-    border-bottom: 2px solid black;
-    }
-    nav {
-    text-align: center;
-    margin-bottom: 20px;
-    }
-    nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: blue;
-    font-weight: bold;
-    }
-    h2 {
-    margin-top: 20px;
-    }
-    footer {
-    background-color: blue;
-    text-align: center;
-    padding: 40px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    }
-h1
-  img(src='logo.png' alt='')
-  br
-  |  Library Management System
-nav
-  a(href='/home') Home
-  a(href='/about') About Us
-  a(href='/contact') Contact Us
-  a(href='/login') Login
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title LMS
+    style.
+      body {
+        background-color: #ffb3c6;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      header {
+        background-color: #b70531;
+        color: white;
+        padding: 15px 0;
+        text-align: center;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .logo img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+      .logo h1 {
+        font-size: 1.5em;
+        margin: 0;
+      }
+      nav {
+        text-align: center;
+        margin-top: 10px;
+      }
+      nav a {
+        text-decoration: none;
+        color: white;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+      .main-content {
+      text-align: center;
+      padding: 40px;
+      margin: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .about-content {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .contact-form {
+      width: 300px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .contact-form label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 93%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 20px;
+      }
+      .contact-form button {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .login-form {
+      width: 300px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .login-form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      }
+      .login-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      }
+      .login-form button {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+  body
+    header
+      .logo
+        img(src='images/logo.jpg' alt='logo')
+        h1 Library Management System
+      nav
+        a(href='/') Home
+        a(href='/about') About Us
+        a(href='/contact') Contact Us
+        a(href='/login') Login
 block content

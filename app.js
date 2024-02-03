@@ -35,7 +35,7 @@ app.get('/about',(req,res)=>{
     res.render('about.pug')
 })
 app.get('/contact',(req,res)=>{
-    res.render('About Us.pug')
+    res.render('contact.pug')
 })
 app.get('/login',(req,res)=>{
     res.render('login.pug')

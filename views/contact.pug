@@ -1,60 +1,76 @@
-doctype html
-head
-  meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title Contact Us - Library Mnanagement System
-  style.
-    body {
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    header {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-    }
-    .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
-    .logo img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    }
-    .logo h1 {
-    font-size: 1.5em;
-    margin: 0;
-    }
-    nav {
-    text-align: center;
-    margin-top: 10px;
-    }
-    nav a {
-    text-decoration: none;
-    color: white;
-    margin: 0 15px;
-    font-weight: bold;
-    }
-    .contact-form {
-    width: 300px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .contact-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    }
-    .contact-form input,
-    .contact-form textarea {
-    width: 100%;
-    padding:
-    </body>
+//- doctype html
+//- head
+//-   meta(charset='UTF-8')
+//-   meta(name='viewport' content='width=device-width, initial-scale=1.0')
+//-   title Contact Us - Library Mnanagement System
+//-   style.
+//-     body {
+//-     background-color: #f5f5f5;
+//-     margin: 0;
+//-     padding: 0;
+//-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+//-     }
+//-     header {
+//-     background-color: #333;
+//-     color: white;
+//-     padding: 15px 0;
+//-     text-align: center;
+//-     }
+//-     .logo {
+//-     display: flex;
+//-     align-items: center;
+//-     justify-content: center;
+//-     }
+//-     .logo img {
+//-     width: 50px;
+//-     height: 50px;
+//-     margin-right: 10px;
+//-     }
+//-     .logo h1 {
+//-     font-size: 1.5em;
+//-     margin: 0;
+//-     }
+//-     nav {
+//-     text-align: center;
+//-     margin-top: 10px;
+//-     }
+//-     nav a {
+//-     text-decoration: none;
+//-     color: white;
+//-     margin: 0 15px;
+//-     font-weight: bold;
+//-     }
+//-     .contact-form {
+//-     width: 300px;
+//-     margin: 50px auto;
+//-     padding: 20px;
+//-     background-color: white;
+//-     border-radius: 5px;
+//-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+//-     }
+//-     .contact-form label {
+//-     display: block;
+//-     margin-bottom: 10px;
+//-     font-weight: bold;
+//-     }
+//-     .contact-form input,
+//-     .contact-form textarea {
+//-     width: 100%;
+//-     padding:
+
+extends layout.pug
+
+block content
+  .contact-form
+    h2 Contact Us
+    label Name
+    input(type='text' name='name' required)
+    label Email
+    input(type='email' name='email' required)
+    label Message
+    textarea(name='message' required)
+    button(type='submit') Send Message
+
+  footer
+
+    | &copy; 2024 Library Management System

@@ -1,0 +1,46 @@
+doctype html
+head
+  // title, css link, meta(encoding)
+  meta(charset='UTF-8')
+  title Library Management System 
+  style.
+    body {
+    background-color: #fafafa;
+    margin: 0 15% 0 15%;
+    }
+    h1 {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    }
+    nav {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    }
+    h2 {
+    margin-top: 20px;
+    }
+    footer {
+    background-color: blue;
+    text-align: center;
+    padding: 40px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    }
+h1
+  img(src='logo.png' alt='')
+  br
+  |  Library Management System
+nav
+  a(href='/home') Home
+  a(href='/about') About Us
+  a(href='/contact') Contact Us
+  a(href='/login') Login
+block content

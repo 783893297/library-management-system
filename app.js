@@ -6,7 +6,7 @@ const db = mysql.createConnection({
     host : 'localhost',
     user:'root',
     password : '',
-    database : 'BeiMazao'
+    database : 'lms_db'
 
 });
 db.connect((err)=> {
@@ -24,17 +24,19 @@ app.set('view-engine', 'pug');
 app.set('views', './views');
 app.listen(3000);
 
-app.get('/', (req,res)=> {
-    res.render('layout.pug')
-})
+// app.get('/', (req,res)=> {
+//     res.render('layout.pug')
+// })
 
-app.get('/home',(req,res)=>{
+app.get('/',(req,res)=>{
     res.render('home.pug')
 })
 app.get('/about',(req,res)=>{
+    res.render('about.pug')
+})
+app.get('/contact',(req,res)=>{
     res.render('About Us.pug')
 })
-
 app.get('/login',(req,res)=>{
     res.render('login.pug')
 })
